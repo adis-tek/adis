@@ -22,6 +22,7 @@ const Home: NextPage = () => {
       </div>
       <h1>Adis has spun up.</h1>
       <div className={styles.featuredPhotosContainer}>
+        <div className={styles.featuredPhoto1}>
         <Image
           src="/featured-1.jpg"
           alt="screenshot of an app"
@@ -29,6 +30,8 @@ const Home: NextPage = () => {
           height={235}
           className={styles.featuredPhoto}
         />
+        </div>
+        <div className={styles.featuredPhoto2}>
         <Image
           src="/featured-2.jpg"
           alt="screenshot of an app"
@@ -36,6 +39,7 @@ const Home: NextPage = () => {
           height={235}
           className={styles.featuredPhoto}
         />
+        </div>
         </div>
         <div className={styles.featuredProjectsContainer}>
           <div className={styles.leftProject}>
