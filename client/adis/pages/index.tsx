@@ -45,14 +45,29 @@ const Home: NextPage = () => {
           <div className={styles.leftProject}>
             <h1 className={styles.number}>01</h1>
             <h1 className={styles.title}>Audiophile</h1>
+            <div className={styles.featuredProjectWrapper}>
             <Image
               src="/featured-2.jpg"
               alt="screenshot of an app"
-              width={180}
-              height={235}
+              width={350}
+              height={350}
+              className={styles.featuredPhoto}
+            />
+            </div>
+          </div>
+          <div className={styles.rightProject}>
+            <h1 className={styles.number}>02</h1>
+            <h1 className={styles.title}>Arch</h1>
+            <div className={styles.featuredProjectWrapper}>
+            <Image
+              src="/featured-2.jpg"
+              alt="screenshot of an app"
+              width={350}
+              height={350}
               className={styles.featuredPhoto}
             />
           </div>
+        </div>
         </div>
     </div>
   )
