@@ -6,6 +6,49 @@
   flex-direction: column;
   width: 100%;
   height: auto;
+  .toggleMenuContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: Bagnard;
+    width: 100%;
+    height: 100%;
+    padding: 25px 25px;
+    color: app.$white;
+    background-color: app.$black;
+    z-index: 3;
+    .topBannerContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Bagnard;
+      width: 100%;
+      height: auto;
+      color: app.$white;
+    .subheader {
+      position: relative;
+      display: block;
+      font-size: 30px;
+      margin: 0px 0px 0px 7.5px;
+    }
+    .menuClose {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 50px;
+      height: auto;
+      color: app.$white;
+    }
+  }
+    .pageTitleContainer {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
+      font-size: 42px;
+    }
+  }
   .hero {
     position: relative;
     display: flex;
@@ -14,8 +57,10 @@
     width: 100%;
     height: 50vh;
     border: 1px solid red;
+    background-color: white;
     padding: 0;
     margin: 0;
+
     .menuContainer {
       position: relative;
       display: flex;
