@@ -20,7 +20,10 @@ const Home: NextPage = () => {
         </div>
         </div>
       </div>
-      <h1>Adis has spun up.</h1>
+      <div className={styles.introWrapper}>
+        <h1 className={styles.heading}>UI/UX Development</h1>
+        <p className={styles.excerpt}>Some text is here.</p>
+      </div>
       <div className={styles.featuredPhotosContainer}>
         <div className={styles.featuredPhoto1}>
         <Image
@@ -69,6 +72,42 @@ const Home: NextPage = () => {
           </div>
         </div>
         </div>
+      <div className={styles.readMoreContainer}>
+        <h1 className={styles.heading}>Enjoying the Process</h1>
+        <p className={styles.excerpt}>Some text is here.</p>
+        <div className={styles.readMoreButtonContainer} role="button">
+          <h2 className={styles.text}>Read More</h2>
+          <div className={styles.imageWrapper}>
+            <Image
+              src="/button-arrow.png"
+              alt="arrow pointing up to the right corner of the screen"
+              width={17}
+              height={17}
+              className={styles.buttonArrow}
+            />
+          </div>
+        </div>
+        <div className={styles.outlinedShadow} />
+      </div>
+      <div className={styles.footerContainer}>
+
+        <h2 className={styles.subheader}>Pages</h2>
+        <div className={styles.pageTitleContainer}>
+        <h1 className={styles.pageTitle}>Projects</h1>
+        <h6 className={styles.exponent}>01</h6>
+        </div>
+        <div className={styles.pageTitleContainer}>
+        <h1 className={styles.pageTitle}>Resume</h1>
+        <h6 className={styles.exponent}>02</h6>
+        </div>
+        <div className={styles.pageTitleContainer}>
+        <h1 className={styles.pageTitle}>About</h1>
+        <h6 className={styles.exponent}>03</h6>
+        </div>
+        <div className={styles.contactContainer}>
+          <h1 className={styles.text}>Contact Me</h1>
+        </div>
+      </div>
     </div>
   )
 }

@@ -45,6 +45,28 @@
       }
     }
   }
+  .introWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 5px 25px;
+    .heading {
+      position: relative;
+      display: block;
+      font-family: Bagnard;
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+    .excerpt {
+      position: relative;
+      display: block;
+      font-family: Cotham;
+      font-size: 18px;
+      margin: 15px 0px 25px 0px;
+      padding: 0px 0px 0px 5px;
+    }
+  }
   .featuredPhotosContainer {
     position: relative;
     display: grid;
@@ -155,6 +177,107 @@
         grid-column-start: 12;
         grid-row-start: 4;
         z-index: 2;
+      }
+    }
+  }
+  .readMoreContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 40px 25px;
+    .heading {
+      position: relative;
+      display: block;
+      font-family: Bagnard;
+      font-size: 48px;
+      margin: 0;
+      padding: 0;
+    }
+    .excerpt {
+      position: relative;
+      display: block;
+      font-family: Cotham;
+      font-size: 18px;
+      margin: 15px 0px 25px 0px;
+      padding: 0px 0px 0px 5px;
+    }
+    .readMoreButtonContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: app.$black;
+      width: 201px;
+      height: 67px;
+      margin: 0px 0px 0px 5px;
+      z-index: 2;
+      .text{
+        position: relative;
+        display: block;
+        font-family: Bagnard;
+        font-size: 24px;
+        font-style: none;
+        line-height: 125%;
+        color: app.$white;
+        padding: 0px 0px 0px 25px;
+      }
+      .imageWrapper {
+        position: relative;
+        display: block;
+        width: auto;
+        height: 100%;
+        padding: 6px 6px;
+        .buttonArrow {
+          position: relative;
+          display: block;
+        }
+      }
+    }
+    .outlinedShadow {
+      position: relative;
+      display: block;
+      color: app.$black;
+      background-image: url("/outline-button-shadow.png");
+      width: 201px;
+      height: 67px;
+      bottom: 50px;
+      left: 17px;
+      z-index: 1;
+    }
+  }
+  .footerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Bagnard;
+    width: 100%;
+    height: auto;
+    padding: 25px 25px;
+    color: app.$white;
+    background-color: app.$black;
+    .subheader {
+      position: relative;
+      display: block;
+      font-size: 30px;
+      margin: 0px 0px 5px 7.5px;
+    }
+    .pageTitleContainer {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: auto;
+      font-size: 42px;
+    }
+    .contactContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      border: 5px solid app.$white;
+      margin: 20px 0px 0px 0px;
+      .text {
+        letter-spacing: 0.5px;
       }
     }
   }
