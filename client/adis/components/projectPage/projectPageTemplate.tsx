@@ -9,10 +9,10 @@ const Projects: NextPage = (props) => {
   return (
     <div className={styles.container}>
         <div className={styles.introContainer}>
-            <h1 className={styles.heading}>Enjoying the Process</h1>
-            <p className={styles.excerpt}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+            <h1 className={styles.heading}>{props.introHeading}</h1>
+            <p className={styles.excerpt}>{props.introExcerpt}</p>
             <div className={styles.buttonContainer} role="button">
-            <h2 className={styles.text}>Visit Site</h2>
+            <h2 className={styles.text}>{props.button1}</h2>
             <div className={styles.imageWrapper}>
                 <Image
                 src="/button-arrow.png"
@@ -25,7 +25,7 @@ const Projects: NextPage = (props) => {
             </div>
             <div className={styles.outlinedShadow} />
             <div className={styles.buttonContainer} role="button">
-            <h2 className={styles.text}>View Code</h2>
+            <h2 className={styles.text}>{props.button2}</h2>
             <div className={styles.imageWrapper}>
                 <Image
                 src="/button-arrow.png"
@@ -42,8 +42,8 @@ const Projects: NextPage = (props) => {
           <p>Slideshow</p>
       </div>
       <div className={styles.excerptContainer}>
-          <h1 className={styles.heading}>Enjoying the Process</h1>
-          <p className={styles.excerpt}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+          <h1 className={styles.heading}>{props.bodyHeading}</h1>
+          <p className={styles.excerpt}>{props.bodyExcerpt}</p>
     </div>
     <div className={styles.screenshotsContainer}>
         <div className={styles.imageWrapper}>

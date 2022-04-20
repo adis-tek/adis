@@ -47,8 +47,10 @@ const Hero: NextPage = (props) => {
         />
         </div>
         </div>
+        <video autoPlay loop muted className={styles.video}>
+          <source src={props.video} />
+        </video>
       </div>
-      <h1>{props.video}</h1>
       </div>
   )
 }

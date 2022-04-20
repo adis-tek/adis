@@ -1,5 +1,22 @@
 {
-    "name": "Adis Tekesic",
-    "photo": "/featured-1.jpg",
-    "video": "/video.mp4"
+    "about": {
+        "test": "About test."
+    },
+    "projects": {
+        "arch": {
+            "video": "/eth-video.mp4",
+            "intro": {
+                "heading": "Intro Heading",
+                "excerpt": "This is an excerpt.",
+                "button1": "Visit Site",
+                "button2": "View Code"
+            },
+            "slideshow": [{"img": "/"}, {"img": "/"}, {"img": "/"}],
+            "body": {
+                "heading": "Intro Heading",
+                "excerpt": "This is an excerpt."
+            },
+            "gallery": [{"img": "/"}, {"img": "/"}, {"img": "/"}]
+        }
+    }
 }
